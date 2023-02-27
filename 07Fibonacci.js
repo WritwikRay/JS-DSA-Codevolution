@@ -1,6 +1,6 @@
 function fibonacci(n) {
     const fib = [0, 1]
-//populate the remaining elements in the array from the third element while 
+//populate the remaining elements in the array from the third element while
 //satisfying the condition that every number should be the sum of the prev 2 nos.
 for(let i =2; i<n; i++) {
     fib[i] = fib[i-1] +fib[i-2]
@@ -15,8 +15,8 @@ console.log(fibonacci(3)); // [0,1,1]
 console.log(fibonacci(7)); // [0,1,1,2,3,5,8]
 console.log(fibonacci(5)); // [0,1,1,2,3]
 
-//conole.log(fibonacci(5)); will first initialize a variable called fib and populate
-//it with [0,1] 
+//console.log(fibonacci(5)); will first initialize a variable called fib and populate
+//it with [0,1]
 
 //[ if index is zero the loop will run for the condition (i=0; i<5; i++) runs the loop 5 times
 //  however if loop index starts from 1 we have to change the condition to hold equality as a condition also,
