@@ -1,0 +1,18 @@
+Problem Statement: Given an array of integers, sort the array.
+const arr = [-6, 20, 8, -2, 4]
+insertionSort(arr) -> (-6, -2, 4, 8, 20)
+
+You virtually split the array into a sorted and an unsorted part. We assume that the first element
+is always sorted and the remaining elements are unsorted. We select an unsorted element and compare
+with all the elements iin the sorted parts. If the elements in the sorted part is smaller than
+the selected element, proceed to the next element in the unsorted part. Else, we shift the larger elements in
+the sorted parts towards the right. We then insert the selected element in the right index. And repeat the process until the whole
+list is sorted.
+
+[06, 20, 8, -2, 4]
+Next we pick the next element 20, now we compare it with the sorted element that is -6. Hence we see
+that it is sorted properly. Now [-6, 20] iis the sorted part. Now we pick the next unsorted element
+i.e. 8. After careful checking we find that 8 is smaller than 20, so we store it in a variable and
+shift it to the right. Again, we check -6 is smaller than 8, and it is, hence  we stop. Now we repeat the loop.
+
+
